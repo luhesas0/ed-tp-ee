@@ -1,0 +1,34 @@
+{
+  "conexoes": [
+    {"divisao2": "1", "divisao1": "1"},
+    {"divisao2": "2", "divisao1": "1"},
+    {"divisao2": "3", "divisao1": "1"},
+    {"divisao2": "1", "divisao1": "2"},
+    {"divisao2": "3", "divisao1": "2"},
+    {"divisao2": "2", "divisao1": "3"},
+    {"divisao2": "1", "divisao1": "3"},
+    {"divisao2": "4", "divisao1": "1"},
+    {"divisao2": "5", "divisao1": "3"},
+    {"divisao2": "6", "divisao1": "2"},
+    {"divisao2": "7", "divisao1": "4"},
+    {"divisao2": "8", "divisao1": "5"},
+    {"divisao2": "9", "divisao1": "6"},
+    {"divisao2": "10", "divisao1": "7"},
+    {"divisao2": "11", "divisao1": "8"},
+    {"divisao2": "12", "divisao1": "9"}
+  ],
+  "divisoes": [
+    {"nome": "Armário", "id": "1", "capacidadeMaxima": 2, "tipoDivisao": "ARMARIO"},
+    {"nome": "Bloco Operatório", "id": "2", "capacidadeMaxima": 5, "tipoDivisao": "BLOCO_OPERATORIO"},
+    {"nome": "Sala de Espera", "id": "3", "capacidadeMaxima": 10, "tipoDivisao": "SALA_DE_ESPERA"},
+    {"nome": "Consultório", "id": "4", "capacidadeMaxima": 3, "tipoDivisao": "CONSULTORIO"},
+    {"nome": "Quarto", "id": "5", "capacidadeMaxima": 2, "tipoDivisao": "QUARTO"},
+    {"nome": "Corredor", "id": "6", "capacidadeMaxima": 15, "tipoDivisao": "CORREDOR"},
+    {"nome": "Recepção", "id": "7", "capacidadeMaxima": 8, "tipoDivisao": "RECEPCAO"},
+    {"nome": "Cozinha", "id": "8", "capacidadeMaxima": 4, "tipoDivisao": "COZINHA"},
+    {"nome": "Casa de Banho", "id": "9", "capacidadeMaxima": 1, "tipoDivisao": "CASA_DE_BANHO"},
+    {"nome": "Elevador", "id": "10", "capacidadeMaxima": 6, "tipoDivisao": "ELEVADOR"},
+    {"nome": "Escada", "id": "11", "capacidadeMaxima": 10, "tipoDivisao": "ESCADA"},
+    {"nome": "Saída", "id": "12", "capacidadeMaxima": 50, "tipoDivisao": "SAIDA"}
+  ]
+}

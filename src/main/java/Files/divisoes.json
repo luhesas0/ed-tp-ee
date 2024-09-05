@@ -1,0 +1,74 @@
+[
+  {
+    "id": "1",
+    "nome": "Bloco Operatório Principal",
+    "tipoDivisao": "BLOCO_OPERATORIO",
+    "capacidade": 10
+  },
+  {
+    "id": "2",
+    "nome": "Consultório 101",
+    "tipoDivisao": "CONSULTORIO",
+    "capacidade": 3
+  },
+  {
+    "id": "3",
+    "nome": "Sala de Espera Geral",
+    "tipoDivisao": "SALA_DE_ESPERA",
+    "capacidade": 30
+  },
+  {
+    "id": "4",
+    "nome": "Quarto de Internamento A",
+    "tipoDivisao": "QUARTO",
+    "capacidade": 2
+  },
+  {
+    "id": "5",
+    "nome": "Corredor Principal",
+    "tipoDivisao": "CORREDOR",
+    "capacidade": 50
+  },
+  {
+    "id": "6",
+    "nome": "Recepção Central",
+    "tipoDivisao": "RECEPCAO",
+    "capacidade": 5
+  },
+  {
+    "id": "7",
+    "nome": "Cozinha do Hospital",
+    "tipoDivisao": "COZINHA",
+    "capacidade": 15
+  },
+  {
+    "id": "8",
+    "nome": "Casa de Banho Feminina",
+    "tipoDivisao": "CASA_DE_BANHO",
+    "capacidade": 2
+  },
+  {
+    "id": "9",
+    "nome": "Armário de Medicamentos",
+    "tipoDivisao": "ARMARIO",
+    "capacidade": 1
+  },
+  {
+    "id": "10",
+    "nome": "Elevador Norte",
+    "tipoDivisao": "ELEVADOR",
+    "capacidade": 8
+  },
+  {
+    "id": "11",
+    "nome": "Escada de Emergência",
+    "tipoDivisao": "ESCADA",
+    "capacidade": 20
+  },
+  {
+    "id": "12",
+    "nome": "Saída Principal",
+    "tipoDivisao": "SAIDA",
+    "capacidade": 100
+  }
+]

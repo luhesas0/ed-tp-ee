@@ -1,0 +1,122 @@
+Program program = new Program();
+
+        Divisao divisao1 = new Divisao("1", "Armário", TipoDivisao.ARMARIO, 2);
+        divisao1.addPermissaoAcesso(TipoPessoa.AUXILIAR);
+        divisao1.addPermissaoAcesso(TipoPessoa.MEDICO);
+
+        Divisao divisao2 = new Divisao("2", "Bloco Operatório", TipoDivisao.BLOCO_OPERATORIO, 5);
+        divisao2.addPermissaoAcesso(TipoPessoa.MEDICO);
+
+        Divisao divisao3 = new Divisao("3", "Sala de Espera", TipoDivisao.SALA_DE_ESPERA, 10);
+        divisao3.addPermissaoAcesso(TipoPessoa.AUXILIAR);
+
+        Divisao divisao4 = new Divisao("4", "Consultório", TipoDivisao.CONSULTORIO, 3);
+        divisao4.addPermissaoAcesso(TipoPessoa.MEDICO);
+        divisao4.addPermissaoAcesso(TipoPessoa.UTENTE);
+
+        Divisao divisao5 = new Divisao("5", "Quarto", TipoDivisao.QUARTO, 2);
+        divisao5.addPermissaoAcesso(TipoPessoa.UTENTE);
+        divisao5.addPermissaoAcesso(TipoPessoa.ENFERMEIRO);
+
+        Divisao divisao6 = new Divisao("6", "Corredor", TipoDivisao.CORREDOR, 15);
+        divisao6.addPermissaoAcesso(TipoPessoa.AUXILIAR);
+        divisao6.addPermissaoAcesso(TipoPessoa.MEDICO);
+        divisao6.addPermissaoAcesso(TipoPessoa.ENFERMEIRO);
+
+        Divisao divisao7 = new Divisao("7", "Recepção", TipoDivisao.RECEPCAO, 8);
+
+        Divisao divisao8 = new Divisao("8", "Cozinha", TipoDivisao.COZINHA, 4);
+        divisao8.addPermissaoAcesso(TipoPessoa.AUXILIAR);
+
+        Divisao divisao9 = new Divisao("9", "Casa de Banho", TipoDivisao.CASA_DE_BANHO, 1);
+        divisao9.addPermissaoAcesso(TipoPessoa.UTENTE);
+        divisao9.addPermissaoAcesso(TipoPessoa.AUXILIAR);
+
+        Divisao divisao10 = new Divisao("10", "Elevador", TipoDivisao.ELEVADOR, 6);
+        divisao10.addPermissaoAcesso(TipoPessoa.UTENTE);
+        divisao10.addPermissaoAcesso(TipoPessoa.MEDICO);
+        divisao10.addPermissaoAcesso(TipoPessoa.ENFERMEIRO);
+
+        Divisao divisao11 = new Divisao("11", "Escada", TipoDivisao.ESCADA, 10);
+        divisao11.addPermissaoAcesso(TipoPessoa.UTENTE);
+        divisao11.addPermissaoAcesso(TipoPessoa.AUXILIAR);
+
+        Divisao divisao12 = new Divisao("12", "Saída", TipoDivisao.SAIDA, 50);
+        divisao12.addPermissaoAcesso(TipoPessoa.UTENTE);
+        divisao12.addPermissaoAcesso(TipoPessoa.AUXILIAR);
+        divisao12.addPermissaoAcesso(TipoPessoa.VISITANTE);
+
+// Adicionando as divisões ao programa
+        program.addDivisao(divisao1);
+        program.addDivisao(divisao2);
+        program.addDivisao(divisao3);
+        program.addDivisao(divisao4);
+        program.addDivisao(divisao5);
+        program.addDivisao(divisao6);
+        program.addDivisao(divisao7);
+        program.addDivisao(divisao8);
+        program.addDivisao(divisao9);
+        program.addDivisao(divisao10);
+        program.addDivisao(divisao11);
+        program.addDivisao(divisao12);
+
+// Adicionando conexões entre as divisões
+        program.addConexao(divisao1, divisao2);
+        program.addConexao(divisao1, divisao3);
+        program.addConexao(divisao1, divisao4);
+        program.addConexao(divisao2, divisao1);
+        program.addConexao(divisao2, divisao3);
+        program.addConexao(divisao2, divisao6);
+        program.addConexao(divisao3, divisao1);
+        program.addConexao(divisao3, divisao2);
+        program.addConexao(divisao3, divisao5);
+        program.addConexao(divisao4, divisao1);
+        program.addConexao(divisao4, divisao7);
+        program.addConexao(divisao5, divisao3);
+        program.addConexao(divisao5, divisao8);
+        program.addConexao(divisao6, divisao2);
+        program.addConexao(divisao6, divisao9);
+        program.addConexao(divisao7, divisao4);
+        program.addConexao(divisao7, divisao10);
+        program.addConexao(divisao8, divisao5);
+        program.addConexao(divisao8, divisao11);
+        program.addConexao(divisao9, divisao6);
+        program.addConexao(divisao9, divisao12);
+        program.addConexao(divisao10, divisao7);
+        program.addConexao(divisao11, divisao8);
+        program.addConexao(divisao12, divisao9);
+
+        Pessoa pessoa1 = new Pessoa("1", "Carlos Mendes", TipoPessoa.MEDICO);
+        Pessoa pessoa2 = new Pessoa("2", "Ana Ferreira", TipoPessoa.ENFERMEIRO);
+        Pessoa pessoa3 = new Pessoa("3", "Luisa Silva", TipoPessoa.AUXILIAR);
+        Pessoa pessoa4 = new Pessoa("4", "Pedro Gomes", TipoPessoa.ADMINISTRATIVO);
+        Pessoa pessoa5 = new Pessoa("5", "João Almeida", TipoPessoa.UTENTE);
+        Pessoa pessoa6 = new Pessoa("6", "Mariana Costa", TipoPessoa.VISITANTE);
+        Pessoa pessoa7 = new Pessoa("7", "Ricardo Sousa", TipoPessoa.MEDICO);
+        Pessoa pessoa8 = new Pessoa("8", "Paula Oliveira", TipoPessoa.ENFERMEIRO);
+        Pessoa pessoa9 = new Pessoa("9", "Miguel Rocha", TipoPessoa.ADMINISTRATIVO);
+        Pessoa pessoa10 = new Pessoa("10", "Sofia Monteiro", TipoPessoa.VISITANTE);
+
+// Adicionando as pessoas ao programa
+        program.addPessoa(pessoa1);
+        program.addPessoa(pessoa2);
+        program.addPessoa(pessoa3);
+        program.addPessoa(pessoa4);
+        program.addPessoa(pessoa5);
+        program.addPessoa(pessoa6);
+        program.addPessoa(pessoa7);
+        program.addPessoa(pessoa8);
+        program.addPessoa(pessoa9);
+        program.addPessoa(pessoa10);
+
+        program.pessoaAcederDivisao(pessoa1, divisao1);  // Carlos Mendes (Médico) tenta acessar Armário
+        program.pessoaAcederDivisao(pessoa2, divisao3);  // Ana Ferreira (Enfermeira) tenta acessar Sala de Espera
+        program.pessoaAcederDivisao(pessoa3, divisao1);  // Luisa Silva (Auxiliar) tenta acessar Armário
+        program.pessoaAcederDivisao(pessoa5, divisao9);  // João Almeida (Utente) tenta acessar Casa de Banho
+        program.pessoaAcederDivisao(pessoa6, divisao7);
+
+        Iterator<Divisao> cm = program.caminhoMaisCurto(pessoa3, divisao12);
+        while (cm.hasNext()) {
+            System.out.println(cm.next());
+        }
+    }
